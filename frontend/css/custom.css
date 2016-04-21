@@ -1,0 +1,38 @@
+.videoContainer {
+    position: relative;
+    width: 480px;
+    height: 320px;
+}
+.videoContainer video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.videoOverallContainer {
+    position: relative;
+    width: 520px;
+    height: 400px;
+}
+
+.panel {
+    border:0;
+}
+.panel-heading{
+    border: 1px solid transparent;
+}
+
+.rowOthers :nth-child(even) panel-heading{
+    background-color: #5bc0de;
+}
+.rowOthers :nth-child(odd) panel-heading{
+    background-color: #5cb85c;
+}
+
+.volume {
+    position: absolute;
+    left: 9%;
+    width: 70%;
+    height: 10px;
+    z-index:10;
+    margin-top:64.5%;
+}
