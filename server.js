@@ -15,7 +15,7 @@ var server = http.createServer(function(request, response) {
     var uri = url.parse(request.url).pathname;
     var config_files = ["css", "font-awesome", "font-awesome-4.2.0", "fonts", "img", "js", "less", "mail"];
 
-    filename = "frontend/index.html";
+    filename = "frontend" + uri;
 
     console.log("Getting file: " + filename);
 
