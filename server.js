@@ -1,7 +1,5 @@
-var static = require('node-static');
 var http = require('http');
 var url = require ('url');
-var file = new(static.Server)();
 var fs = require("fs");
 
 var port;
