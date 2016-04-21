@@ -15,7 +15,13 @@ var server = http.createServer(function(request, response) {
     var uri = url.parse(request.url).pathname;
     var config_files = ["css", "font-awesome", "font-awesome-4.2.0", "fonts", "img", "js", "less", "mail"];
 
-    filename = "frontend" + uri;
+    if (uri.split("/").length >1 && config_files.indexOf(uri.split("/")[1]) != -1) {
+        console.log("URI:"+uri);
+        filename = "frontend" + uri;
+    } 
+    else {
+            filename = 'frontend/index.html';
+    }
 
     console.log("Getting file: " + filename);
 
