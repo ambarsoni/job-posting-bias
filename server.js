@@ -3,17 +3,6 @@ var http = require('http');
 var url = require ('url');
 var file = new(static.Server)();
 var fs = require("fs");
-    if (process.env.REDISTOGO_URL) {
-        var rtg   = require("url").parse(process.env.REDISTOGO_URL);
-        var client = require("redis").createClient(rtg.port, rtg.hostname);
-
-        client.auth(rtg.auth.split(":")[1]);
-    } else {
-        var redis = require("redis");
-        var client = redis.createClient();
-    }
-
-
 
 var port;
 if (process.env.PORT) {
@@ -22,15 +11,8 @@ if (process.env.PORT) {
     port =2016;
 }
 console.log(port);
-/*
-var app = http.createServer(function (req, res) {
-    req.addListener('end', function(e, res) {
-        if (e) {
-            file.serveFile('/video.html', 404, {}, req, res);
-        }
-    });
 
-}).listen(port); */
+
 var server = http.createServer(function(request, response) {
     var uri = url.parse(request.url).pathname;
     var config_files = ["css", "font-awesome", "font-awesome-4.2.0", "fonts", "img", "js", "less", "mail"];

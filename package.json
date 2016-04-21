@@ -1,25 +1,14 @@
 {
-  "name": "codelab",
+  "name": "job-posting-bias",
   "version": "0.0.1",
-  "description": "WebRTC codelab",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://bitbucket.org/webrtc/codelab"
-  },
-  "keywords": [
-    "webrtc",
-    "codelab"
+  "description": "A simple detection of bias in job postings",
+  "main": "server.js",
+  "author": "CS5306",
+  "contributors": [
+    "Ambar Soni",
+    "Rachel Baer",
+    "Josselyn Tsai",
+    "Kelly OShaughnessy"
   ],
-  "author": "webrtc",
-  "license": "MIT",
-  "dependencies": {
-    "node-static": "~0.7.1",
-    "socket.io": "~0.9.16",
-    "express": "~3.4.0",
-    "redis":"0.12.1"
-  }
+  "license": "MIT"
 }
