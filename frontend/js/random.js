@@ -1,3 +1,28 @@
+/**
+ * Returns a random integer between min (inclusive) and max (inclusive)
+ * Using Math.round() will give you a non-uniform distribution!
+ */
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function takeSurvey(){
+	var link = document.getElementById("takeSurvey");
+
+	var surveys = ['http://goo.gl/forms/aFg40znhQH',
+				   'http://goo.gl/forms/0uu2TA3EPW',
+				   'http://goo.gl/forms/CXxRP5MHsP',
+				   'http://goo.gl/forms/Z7VkrEYYCz',
+				   'http://goo.gl/forms/oTWbfpShiw',
+				   'http://goo.gl/forms/MOyTJ81i64',
+				   'http://goo.gl/forms/5XKBnVqIrp',
+				   'http://goo.gl/forms/eWxOT9ywSf',
+				   'http://goo.gl/forms/xhk09KW3et',
+				   'http://goo.gl/forms/gTL1hCKvjp']
+	var index = getRandomInt(0, 9);
+	link.setAttribute('href', surveys[index];
+}
+
 function generateRoom() {
     var link = document.getElementById("createRoomButton");
 

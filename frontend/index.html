@@ -33,7 +33,7 @@
 
 </head>
 
-<body id="page-top" class="index">
+<body id="page-top" class="index" onload="takeSurvey();">
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -74,8 +74,7 @@
             <div class="intro-text">
                 <div class="intro-lead-in">Eliminating gender bias in job postings</div>
                 <div class="intro-heading">Biases</div>
-                <a href="https://www.google.com/insights/consumersurveys/view?survey=qmqopldup5euq&question=1&filter=&rw=1" 
-                   class="btn btn-lg btn-primary">Take Survey</a>
+                <a id="takeSurvey" href="#" class="btn btn-lg btn-primary">Take Survey</a>
                 <a href="#about" class="btn btn-lg btn-xl">Tell Me More</a>
             </div>
         </div>
@@ -219,6 +218,9 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
+
+    <!-- Custom Random Chatroom Generation JavaScript -->
+    <script src="js/random.js"></script>
 
 </body>
 
