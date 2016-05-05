@@ -20,7 +20,7 @@ function takeSurvey(){
 				   'http://goo.gl/forms/xhk09KW3et',
 				   'http://goo.gl/forms/gTL1hCKvjp']
 	var index = getRandomInt(0, 9);
-	link.setAttribute('href', surveys[index];
+	link.setAttribute('href', surveys[index]);
 }
 
 function generateRoom() {
