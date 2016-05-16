@@ -3,6 +3,8 @@
 
 <head>
 
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -45,6 +47,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">Biases</a>
             </div>
@@ -60,6 +63,12 @@
                     </li>
                     <li>
                         <a class="page-scroll" href="#team">Team</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#analysis">Analysis</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#nextsteps">Next Steps</a>
                     </li>
                 </ul>
             </div>
@@ -197,6 +206,166 @@
         </div>
     </section>
 
+    <!-- analysis section -->
+    <script type="text/javascript" src="js/results.js"></script>
+    <section id="analysis">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Analysis</h2>
+                    <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
+                    <i>Put a written overview of our results here.</i><br><br>
+                    Visual overview: Include the nuetral ones at the beginning or end.<br><br>
+                    Then data can be broken down by individual job posting to learn more about specific words chosen, gender specific biases, demographic breakdown, etc.<br><br>
+                </div>
+               
+            </div>
+            <div class="row text-center">
+                <!--Gender leaning col -->
+                 <div class="col-md-3">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-venus-mars fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h3 class="service-heading">GENDER LEANING</h3>
+                    <p class="text-muted"><i>Expected bias of the job posting based on prior trigger words.</i></p>
+                    <br><br><br>
+
+                    <!-- FEMININE LEANING -->
+                    <!--Apple-->
+                    <span class="fa-stack fa-4x">
+                        <i style= "color:pink" class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-female fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <br><br><br><br>
+                    <!--Birchbox-->
+                    <span class="fa-stack fa-4x">
+                        <i style= "color:pink" class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-female fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <br><br><br><br>
+                    <!--Accenture-->
+                    <span class="fa-stack fa-4x">
+                        <i style= "color:pink" class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-female fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <br><br><br><br>
+                    <!--Red Antler-->
+                    <span class="fa-stack fa-4x">
+                        <i style= "color:pink" class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-female fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <br><br><br><br>
+
+                    <!-- MASCULINE LEANING -->
+                    <!--Paypal-->
+                    <span class="fa-stack fa-4x">
+                        <i style= "color:lightskyblue" class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-male fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <br><br><br><br>
+                    <!--Google/YouTube-->
+                    <span class="fa-stack fa-4x">
+                        <i style= "color:lightskyblue" class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-male fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <br><br><br><br>
+                    <!--Facebook-->
+                    <span class="fa-stack fa-4x">
+                        <i style= "color:lightskyblue" class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-male fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <br><br><br><br>
+                    <!--Yahoo-->
+                    <span class="fa-stack fa-4x">
+                        <i style= "color:lightskyblue" class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-male fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <br><br><br><br>
+
+                    <!-- NUETRAL -->
+                    <!--Etsy-->
+                    <span class="fa-stack fa-4x">
+                        <i style= "color:palegreen" class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <br><br><br><br>
+                    <!--Oracle-->
+                    <span class="fa-stack fa-4x">
+                        <i style= "color:palegreen" class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+                    </span>
+                </div>
+
+                <!-- Initial survey col -->
+                <div class="col-md-3">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h3 class="service-heading">INITIAL SURVEY</h3>
+                    <p class="text-muted"><i>Description of initial survey.</i></p>
+                    <!-- Apple Survey I-->
+                    <br><br><br><br>
+                    <div id="apple">
+                        <script>
+                        init_results("apple");
+                        </script>
+                    </div>
+                </div>
+
+                <!-- Secondary survey col -->
+                <div class="col-md-3">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h3 class="service-heading">ADJUSTED SURVEY</h3>
+                    <p class="text-muted"><i>Description of initial survey.</i></p>
+                    <!-- Apple Survey II-->
+                    <br><br><br><br>
+                    <div id="apple2">
+                        <script>
+                        post_results("apple");
+                        </script>
+                    </div>
+                </div>
+
+                <!-- Change in bias col -->
+                <div class="col-md-3">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-globe fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h3 class="service-heading">CHANGE IN BIAS</h3>
+                    <p class="text-muted"><i>What changed?</i></p>
+                    <!-- Apple Change-->
+                    <br><br><br><br>
+                    <div id="apple_change">
+                        <script>
+                        change("apple")
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Next Steps Section -->
+    <section id="nextsteps" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Next Steps</h2>
+                    <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
+                    Potential areas of improvement and reasons for discrepencies or subtelty of bias. Additionally, can include other similar studies for reference.<br><br>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
     <footer>
         <div class="container">
             <div class="row">
@@ -214,7 +383,6 @@
             </div>
         </div>
     </footer>
-
     
 
     <!-- jQuery -->

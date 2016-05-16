@@ -18,7 +18,17 @@ function takeSurvey(){
 				   'http://goo.gl/forms/5XKBnVqIrp',
 				   'http://goo.gl/forms/eWxOT9ywSf',
 				   'http://goo.gl/forms/xhk09KW3et',
-				   'http://goo.gl/forms/gTL1hCKvjp']
+				   'http://goo.gl/forms/gTL1hCKvjp',
+				   'http://goo.gl/forms/53mjjjsOLJ',
+					'http://goo.gl/forms/kKsq0PbQMJ',
+					'http://goo.gl/forms/dB9tsXO4Pq',
+					'http://goo.gl/forms/Mj825CUzCW',
+					'http://goo.gl/forms/Z2iKY3a5ZX',
+					'http://goo.gl/forms/uT9K6HlS4H',
+					'http://goo.gl/forms/5VelbwpHFJ',
+					'http://goo.gl/forms/9wpNY0LYJN',
+					'http://goo.gl/forms/1ALxXPk9NX',
+					'http://goo.gl/forms/u2I5oquu5o']
 	var index = getRandomInt(0, 9);
 	link.setAttribute('href', surveys[index]);
 }
