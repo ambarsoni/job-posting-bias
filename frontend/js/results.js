@@ -47,7 +47,7 @@ function overview_results(batch, company) {
 				    .attr("height", height)
 				    .attr("align","center")
 				    .append("g")
-				    .attr("transform", "translate(" + (width-padding)/2 + "," + (radius) + ")");	
+				    .attr("transform", "translate(" + (width)/2 + "," + (radius) + ")");	
 
 		var g = svg.selectAll(".arc")
 			.data(pie(rel_data))
